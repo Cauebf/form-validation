@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Formulário</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="faq-section">
+            <div class="faq-content">
+                <h1>FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h1>
+                <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <form class="form">
+                <input type="text" name="name" id="name" placeholder="Nome completo *" class="input">
+                <span class="required-field">campo obrigatório</span>
+
+                <input type="text" name="email" id="email" placeholder="Email *" class="input">
+                <span class="required-field">campo obrigatório</span>
+
+                <input type="number" name="telephone" id="telephone" placeholder="Telefone *" class="input">
+                <span class="required-field">campo obrigatório</span>
+
+                <textarea name="message" id="message" placeholder="Mensagem *" class="input" cols="49" rows="4"></textarea>
+                <span class="required-field">campo obrigatório</span>
+
+                <p>*campos obrigatórios</p>
+                <input type="submit" value="Enviar" id="submit" class="submit">
+                <!-- <a href="#" class="submit">Enviar</a> -->
+            </form>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
