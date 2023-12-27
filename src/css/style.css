@@ -5,37 +5,38 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-main {
+.main {
     height: 100%;
     display: grid;
-    grid-template-areas: "duvidas secao";
+    grid-template-areas: "doubts form";
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
-.faq-section {
-    grid-area: duvidas;
+.doubts-section {
+    grid-area: doubts;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.faq-section .faq-content {
-    max-width: 715px;
-    margin-left: 100px;
+.doubts-section .doubts-content {
+    width: 75%;
+    margin-left: 10%;
 }
 
-.faq-section .faq-content h1 {
+.doubts-section .doubts-content h1 {
     font-size: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
 }
 
-.faq-section .faq-content p {
+.doubts-section .doubts-content p {
     font-size: 37px;
 }
 
-.form-section {
-    grid-area: secao;
+.form-section {    
+    grid-area: form;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,16 +44,16 @@ main {
 
 .form-section .form {
     background-color: #fff;
-    max-height: 860px;
+    height: 80%;
     width: 80%;
-    padding: 50px;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .form-section .form .input {
-    height: 80px;
+    height: 10%;
     padding: 20px;
     font-weight: 400;
     margin-top: 40px;
@@ -69,7 +70,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .form-section .form #message {
-    height: 200px;
+    min-height: 25%;
     resize: none;
 }
 
@@ -81,16 +82,20 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .form-section .form p {
     font-size: 33px;
     margin-top: 18px;
-    transform: translateX(-15px);
+    transform: translateX(-2%);
 }
 
 .form-section .form .submit {
-    height: 100px;
+    height: 14%;
     background-color: #3CCC87;
     border: none;
     font-weight: 700;
-    margin-top: 45px;
+    margin-top: 6.5%;
     cursor: pointer;
+}
+
+.form-section .form .submit.error {
+    margin-top: 3.5%;
 }
 
 .form-section .form .input, .form-section .form .submit {
@@ -99,14 +104,14 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     font-family: 'Roboto', sans-serif;
 }
 
-.faq-section .faq-content h1, .faq-section .faq-content p, .form-section .form .submit {
+.doubts-section .doubts-content h1, .doubts-section .doubts-content p, .form-section .form .submit {
     color: #fff;
 }
 
 .required-field {
     color: #F52E2E;
     font-size: 18px;
-    margin-bottom: -20px;
+    margin-bottom: -22.5px;
     display: none;
 }
 

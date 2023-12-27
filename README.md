@@ -1,6 +1,6 @@
 # Form Validation Code Sample 📝
 
-![Demo](./src/img/demo.gif)
+![Demo](./src/img/demo/demo.gif)
 
 ## 📌 Table of Contents 
 
@@ -15,7 +15,7 @@
 
 ## 🚀 About the Code Sample
 
-The code sample focuses on implementing form validation through JavaScript. Upon form submission, the script checks input values, and provides visual feedback. Empty fields trigger red borders and display "required field" messages, while filled fields turn borders green.
+The code sample focuses on implementing form validation through JavaScript. Upon form submission, the script checks input values, and provides visual feedback. Empty fields trigger red borders and display "required field" messages, while filled fields turn borders green. Notably, the code is designed to be responsive across various devices.
 
 ## 💻 Technologies Used
 
@@ -28,14 +28,15 @@ The code sample focuses on implementing form validation through JavaScript. Upon
 - `src/css/`: Contains stylesheets.
   - `reset.css`: Resets default styles for consistency.
   - `style.css`: Styles specific to the code sample.
+  - `responsive.css`: Styles for responsiveness.
 - `src/js/`: Holds JavaScript files.
   - `index.js`: Implements form validation logic.
-- `img/`: Stores images.
+- `src/img/`: Stores images.
 - `index.html`: Main HTML file.
 
 ## 🏆 Challenges and Execution
 
-The decision-making process and execution of the form validation presented unique challenges. Ensuring a user-friendly interface while incorporating effective validation required careful consideration of design and functionality. Despite the non-responsive design for the sake of testing form validation, the code demonstrates a fundamental understanding of web development principles.
+The decision-making process and execution of the form validation presented unique challenges. Balancing a user-friendly interface with effective validation required careful consideration of design and functionality. Additionally, adapting the code to be responsive posed its own set of challenges, ensuring a seamless experience across various devices. Despite these hurdles, the resulting code reflects a comprehensive understanding of both responsive design principles and web development fundamentals.
 
 ## ⚙ How to Use
 

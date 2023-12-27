@@ -6,6 +6,8 @@ const inputs = document.querySelectorAll('.input')
 const submit = document.querySelector('.submit')
 const requiredField = document.querySelectorAll('.required-field')
 
+removeClassError()
+
 inputs.forEach((input, index) => {
     submit.addEventListener('click', () => {
         if (input.value === "") {
@@ -17,5 +19,15 @@ inputs.forEach((input, index) => {
             input.classList.add('green-border')
             requiredField[index].classList.remove('visible')
         }
+
+        if (inputs[3].classList.contains('red-border')){
+            submit.classList.add('error')
+        }else {
+            submit.classList.remove('error')        
+        }
     })
 })
+
+function removeClassError() {
+    submit.classList.remove('error')
+}
