@@ -123,10 +123,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     display: block;
 }
 
-.form-section .form .red-border {
+.form-section .form .invalid {
     border: #F52E2E solid 2px;
 }
 
-.form-section .form .green-border {
+.form-section .form .valid {
     border: #00C22B solid 2px;
 }
